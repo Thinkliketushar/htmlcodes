@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input</title>
+</head>
+<body>
+    <h3>Forms and input tags</h3>
+    <!-- We make a form using Form tag -->
+    <!-- action take backend. This data goes to backend like python, java, php -->
+    <form action="backend.php">
+        <!-- we use input tag for user input -->
+        <!-- There are many thing in input type like text, number, etc. -->
+        <!-- input tag is inline element so we make a division to next line using div. -->
+        <!-- div is block element. We will discuss in anothe file. -->
+        <!-- name are used to get the value in backend. -->
+        <div>
+        Name : <input type="text" name = "mytext">
+        </div> <br>
+        <div>
+        Roll number : <input type="number" name = "mynumber">
+        </div> <br>
+        <div>
+        Email : <input type="email" name = "myemail">
+        </div> <br>
+        <div>
+            Date : <input type="date" name = "mydate">
+        </div> <br>
+        <div>
+            Are you eligible? : <input type= "checkbox" name="Myeligible">
+        </div> <br>
+        <div>
+            Gender : <input type="radio" name = "myGender"> Female
+                      <input type="radio" name="myGender"> Male
+                      <input type="radio" name="myGender"> Other
+        </div> <br>
+        <div>
+            Write about your self : <input type="text"> <br>
+            Write about yout seld : <br> <textarea name=" mytext" cols="40" rows="5"></textarea>
+        </div> <br>
+        <!-- When you click on name the your curse goes into input section. This funcionality perform by label-->
+        <!-- It takes id name on input in for attributes only -->
+        <label for="new">Name</label>
+        <div>
+            <input type="text" name = "mytext" id = "new" >
+        </div> <br>
+        <div>
+        <label for="car"></label>
+        <select name="mycar" id="car">
+            <option value="lambo"> lamborghini</option>
+            <option value="Terzo"> Terzo</option>
+        </select>
+        </div> <br>
+        <div>
+            Reset : <input type="reset">
+        </div><br>
+        <div>
+            submit : <input type="submit" value = "Submit now" name="submit">
+        </div>
+    <!-- We don't have any backend so when when we click on submit then you get a error and you data is save on url. -->
+    </form>
+
+</body>
+</html>
